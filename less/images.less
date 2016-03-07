@@ -1,0 +1,46 @@
+// main: base.less
+.Images {
+  color: @black;
+  background: @white;
+  &-list {
+    &-item {
+      margin: 1rem;
+    }
+    &-nav {
+      margin-top: 2rem;
+      text-align: center;
+      &--prev,
+      &--next {
+        display: inline-block;
+        color: @dark-blue;
+        background: darken(@white, 5%);
+        padding: 0 1rem 0.25rem;
+        border-radius: 5px;
+        font-size: 2rem;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        transition: linear .05s;
+        &:hover {
+          color: @black;
+          background: darken(@white, 10%);
+        }
+      }
+    }
+  }
+  &-section-header {
+    font-weight: 300;
+    font-size: 2.6rem;
+  }
+  &-img {
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 36rem;
+  }
+}

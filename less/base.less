@@ -1,0 +1,39 @@
+// out: ../css/base.css, sourcemap: true, compress: false
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+@dark-blue: #2c6892;
+@light-blue: #0099ce;
+@orange: #e9530d;
+@black: #000000;
+@white: #ffffff;
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: @dark-blue;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.45;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@import "section";
+@import "intro";
+@import "contact";
+@import "price";
+@import "map";
+@import "info";
+@import "perks";
+@import "process";
+@import "demo";
+@import "images";
