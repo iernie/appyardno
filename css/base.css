@@ -296,7 +296,7 @@ p {
 }
 .Info {
   color: #ffffff;
-  background: #ffffff url("/img/notifications.jpg") no-repeat center center;
+  background: #ffffff url("img/notifications.jpg") no-repeat center center;
   background-size: cover;
 }
 .Info-section-header {
@@ -368,7 +368,7 @@ p {
 }
 .Demo {
   color: #ffffff;
-  background: #000000 url("/img/paper.jpg") no-repeat center center;
+  background: #000000 url("img/paper.jpg") no-repeat center center;
   background-size: cover;
 }
 .Demo-section-header {
