@@ -2,32 +2,46 @@
 .Images {
   color: @black;
   background: @white;
+  &-wrapper {
+    position: relative;
+  }
   &-list {
     &-item {
       margin: 1rem;
     }
-    &-nav {
-      margin-top: 2rem;
+    &-nav-button {
+      display: inline-block;
+      color: @dark-blue;
+      background: darken(@white, 5%);
+      border-radius: 2.7rem;
+      font-size: 2rem;
+      height: 2.7rem;
+      width: 2.7rem;
       text-align: center;
-      &--prev,
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      transition: linear 0.05s;
+      &:hover {
+        color: @black;
+        background: darken(@white, 10%);
+      }
+      &--prev {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+      }
       &--next {
-        display: inline-block;
-        color: @dark-blue;
-        background: darken(@white, 5%);
-        padding: 0 1rem 0.25rem;
-        border-radius: 5px;
-        font-size: 2rem;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        transition: linear .05s;
-        &:hover {
-          color: @black;
-          background: darken(@white, 10%);
-        }
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
       }
     }
   }
@@ -42,5 +56,14 @@
     max-width: 100%;
     height: auto;
     max-height: 36rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .Images {
+    &-list {
+      &-nav-button {
+        display: none;
+      }
+    }
   }
 }

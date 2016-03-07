@@ -121,7 +121,7 @@ p {
 }
 .Contact {
   color: #143044;
-  background: #0099ce;
+  background: #0099ce url("../img/appyard-a.png") no-repeat top right;
 }
 .Contact-section-header {
   font-size: 2.6rem;
@@ -222,7 +222,7 @@ p {
   margin-left: 4px;
 }
 .Map {
-  background: #000000;
+  background: #303030;
 }
 .Map-item {
   position: absolute;
@@ -243,7 +243,7 @@ p {
   right: 0;
   margin: 0 auto;
   z-index: 10;
-  background: #000000;
+  background: #303030;
 }
 .Map-contactBox:before {
   top: 100%;
@@ -255,7 +255,7 @@ p {
   position: absolute;
   pointer-events: none;
   border-color: rgba(0, 0, 0, 0);
-  border-top-color: #000000;
+  border-top-color: #303030;
   border-width: 30px;
   margin-left: -30px;
   z-index: 10;
@@ -295,7 +295,7 @@ p {
   }
 }
 .Info {
-  color: #ffffff;
+  color: #303030;
   background: #ffffff url("../img/notifications.jpg") no-repeat center center;
   background-size: cover;
 }
@@ -306,14 +306,14 @@ p {
   line-height: 3rem;
 }
 .Info-section-header span {
-  background: rgba(0, 153, 206, 0.8);
+  background: rgba(230, 230, 230, 0.8);
 }
 .Info-text {
   margin-top: 1rem;
   font-size: 1.2rem;
   line-height: 2rem;
   padding: 0.5rem;
-  background: rgba(0, 153, 206, 0.8);
+  background: rgba(230, 230, 230, 0.8);
 }
 @media only screen and (min-width: 320px) and (max-width: 991px) {
   .Info {
@@ -321,7 +321,7 @@ p {
   }
 }
 .Perks {
-  color: #000000;
+  color: #303030;
   background: #ffffff;
 }
 .Perks-section-header {
@@ -357,7 +357,7 @@ p {
 }
 .Process {
   color: #ffffff;
-  background: #000000;
+  background: #303030;
 }
 .Process-section-header {
   font-weight: 300;
@@ -368,7 +368,7 @@ p {
 }
 .Demo {
   color: #ffffff;
-  background: #000000 url("../img/paper.jpg") no-repeat center center;
+  background: #303030 url("../img/paper.jpg") no-repeat center center;
   background-size: cover;
 }
 .Demo-section-header {
@@ -376,17 +376,17 @@ p {
   font-size: 2.6rem;
 }
 .Demo-section-header span {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(48, 48, 48, 0.8);
 }
 .Demo-text {
   font-size: 1.2rem;
   line-height: 2rem;
   padding: 0.5rem;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(48, 48, 48, 0.8);
   margin-bottom: 6rem;
 }
 .Demo-link {
-  width: 16rem;
+  width: 13rem;
   margin-right: 1rem;
   margin-top: 0.5rem;
 }
@@ -396,36 +396,49 @@ p {
   }
 }
 .Images {
-  color: #000000;
+  color: #303030;
   background: #ffffff;
+}
+.Images-wrapper {
+  position: relative;
 }
 .Images-list-item {
   margin: 1rem;
 }
-.Images-list-nav {
-  margin-top: 2rem;
-  text-align: center;
-}
-.Images-list-nav--prev,
-.Images-list-nav--next {
+.Images-list-nav-button {
   display: inline-block;
   color: #2c6892;
   background: #f2f2f2;
-  padding: 0 1rem 0.25rem;
-  border-radius: 5px;
+  border-radius: 2.7rem;
   font-size: 2rem;
+  height: 2.7rem;
+  width: 2.7rem;
+  text-align: center;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  transition: linear .05s;
+  transition: linear 0.05s;
 }
-.Images-list-nav--prev:hover,
-.Images-list-nav--next:hover {
-  color: #000000;
+.Images-list-nav-button:hover {
+  color: #303030;
   background: #e6e6e6;
+}
+.Images-list-nav-button--prev {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.Images-list-nav-button--next {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
 }
 .Images-section-header {
   font-weight: 300;
@@ -438,4 +451,9 @@ p {
   max-width: 100%;
   height: auto;
   max-height: 36rem;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .Images-list-nav-button {
+    display: none;
+  }
 }

@@ -109,10 +109,10 @@ $(document).ready(function() {
   owl.owlCarousel({
       singleItem: true
   });
-  $(".Images-list-nav--next").click(function(){
+  $(".Images-list-nav-button--next").click(function(){
     owl.trigger('owl.next');
   })
-  $(".Images-list-nav--prev").click(function(){
+  $(".Images-list-nav-button--prev").click(function(){
     owl.trigger('owl.prev');
   })
 
