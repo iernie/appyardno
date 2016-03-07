@@ -1,0 +1,37 @@
+// main: base.less
+.Demo {
+  color: @white;
+  background: @black url("/img/paper.jpg") no-repeat center center;
+  background-size: cover;
+
+  &-section-header {
+    font-weight: 300;
+    font-size: 2.6rem;
+    span {
+      background: fade(@black, 80%);
+    }
+  }
+
+  &-text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 0.5rem;
+    background: fade(@black, 80%);
+    margin-bottom: 6rem;
+  }
+
+  &-link {
+    width: 16rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  .Demo {
+    background-position: 35%;
+  }
+}

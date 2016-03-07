@@ -1,0 +1,40 @@
+// main: base.less
+.Perks {
+  color: @black;
+  background: @white;
+
+  &-section-header {
+    font-weight: 300;
+    font-size: 2.6rem;
+  }
+  &-item {
+    margin-top: 4rem;
+    text-align: center;
+    transition: linear .1s;
+    &:hover {
+      margin-top: 3.5rem;
+      color: @dark-blue;
+      margin-bottom: 0.5rem;
+    }
+    &-icon {
+      font-size: 4rem;
+      color: fade(@orange, 80%);
+      &--bigger {
+        font-size: 5rem;
+      }
+    }
+    &-header {
+      text-align: left;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      text-transform: uppercase;
+    }
+    &-text {
+      font-size: 1.2rem;
+      text-align: left;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+}

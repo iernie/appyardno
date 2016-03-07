@@ -1,0 +1,65 @@
+// main: base.less
+.Contact {
+  color: darken(@dark-blue, 20%);
+  background: @light-blue;
+  &-section-header {
+    font-size: 2.6rem;
+    font-weight: 300;
+    margin-top: 6rem;
+  }
+  &-form {
+    &-input {
+      background: @white;
+      display: inline-block;
+      border: none;
+      border-radius: 2px;
+      padding: 1rem;
+      color: @dark-blue;
+      text-decoration: none;
+      font-size: 1.3rem;
+      width: 20rem;
+    }
+    &-input-alt {
+      display: none;
+    }
+    &-button {
+      background: @dark-blue;
+      display: inline-block;
+      border: none;
+      border-radius: 3px;
+      padding: 1rem;
+      color: @white;
+      text-decoration: none;
+      font-size: 1.3rem;
+      transition: linear 0.1s;
+      &:hover {
+        background: fade(@dark-blue, 60%);
+      }
+    }
+  }
+  &-social {
+    margin: 6rem 0 0 0;
+    &-badge {
+      font-size: 3rem;
+      color: @dark-blue;
+      text-decoration: none;
+      transition: linear 0.1s;
+      &:hover {
+        color: fade(@dark-blue, 60%);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .Contact {
+    &-form {
+      &-input {
+        width: 100%;
+      }
+      &-button {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
