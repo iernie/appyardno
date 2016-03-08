@@ -108,7 +108,7 @@ $(document).ready(function() {
   var owl = $('.Image-list');
   owl.owlCarousel({
       singleItem: true,
-      autoHeight: md.phone() || md.mobile() || md.tablet()
+      autoHeight: !!(md.phone() || md.mobile() || md.tablet())
   });
   $(".Images-list-nav-button--next").click(function(){
     owl.trigger('owl.next');
