@@ -34,10 +34,10 @@
     padding: 1rem;
     color: @white;
     text-decoration: none;
-    background: @light-blue;
+    border: 0.125rem solid @white;
     transition: linear 0.1s;
     &:hover {
-      background: fade(@light-blue, 80%);
+      background: fade(@light-blue, 70%);
     }
   }
 }
@@ -45,7 +45,7 @@
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .Intro {
     &-logo {
-      width: 100%;
+      width: 80%;
     }
     &-img {
       width: 100%;
@@ -56,7 +56,7 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .Intro {
     &-logo {
-      width: 70%;
+      width: 50%;
     }
     &-img {
       width: 70%;
@@ -70,7 +70,7 @@
       width: 50%;
     }
     &-img {
-      width: 50%;
+      width: 70%;
     }
   }
 }

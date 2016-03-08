@@ -102,12 +102,13 @@ $(document).ready(function() {
     minimum: 320,
     maximum: 991,
     minFont: 14,
-    maxFont: 36
+    maxFont: 24
   });
 
   var owl = $('.Image-list');
   owl.owlCarousel({
-      singleItem: true
+      singleItem: true,
+      autoHeight: md.phone() || md.mobile() || md.tablet()
   });
   $(".Images-list-nav-button--next").click(function(){
     owl.trigger('owl.next');

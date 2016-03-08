@@ -89,15 +89,15 @@ p {
   padding: 1rem;
   color: #ffffff;
   text-decoration: none;
-  background: #0099ce;
+  border: 0.125rem solid #ffffff;
   transition: linear 0.1s;
 }
 .Intro-button:hover {
-  background: rgba(0, 153, 206, 0.8);
+  background: rgba(0, 153, 206, 0.7);
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .Intro-logo {
-    width: 100%;
+    width: 80%;
   }
   .Intro-img {
     width: 100%;
@@ -105,7 +105,7 @@ p {
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .Intro-logo {
-    width: 70%;
+    width: 50%;
   }
   .Intro-img {
     width: 70%;
@@ -116,7 +116,7 @@ p {
     width: 50%;
   }
   .Intro-img {
-    width: 50%;
+    width: 70%;
   }
 }
 .Contact {
@@ -154,7 +154,7 @@ p {
   transition: linear 0.1s;
 }
 .Contact-form-button:hover {
-  background: rgba(44, 104, 146, 0.6);
+  background: #204c6b;
 }
 .Contact-social {
   margin: 6rem 0 0 0;
@@ -166,7 +166,7 @@ p {
   transition: linear 0.1s;
 }
 .Contact-social-badge:hover {
-  color: rgba(44, 104, 146, 0.6);
+  color: #204c6b;
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .Contact-form-input {
@@ -175,51 +175,6 @@ p {
   .Contact-form-button {
     margin-top: 1rem;
   }
-}
-.Price {
-  color: #2c6892;
-  background: #cef2ff;
-}
-.Price-section-header {
-  font-size: 2.6rem;
-  font-weight: 300;
-}
-.Price .Price-item {
-  position: relative;
-  padding: 0 0 0 2rem;
-}
-.Price .Price-item:before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 0.2rem;
-  height: 6rem;
-  background: #0099ce;
-  left: 0;
-  top: 0;
-}
-.Price .Price-item-header {
-  margin: 4rem 0 0 0;
-  text-transform: uppercase;
-  font-size: 1.8rem;
-}
-.Price .Price-item-price {
-  font-size: 1.5rem;
-}
-.Price .Price-item-price sub {
-  font-size: 1rem;
-}
-.Price .Price-item-list {
-  padding: 0;
-  margin: 1rem 0 0 0;
-  list-style-type: none;
-  font-size: 1rem;
-  color: #0099ce;
-}
-.Price .Price-item-list li {
-  padding: 0.5rem 0 0.5rem 1rem;
-  text-indent: -9px;
-  margin-left: 4px;
 }
 .Map {
   background: #303030;
@@ -286,7 +241,7 @@ p {
     position: absolute;
     pointer-events: none;
     border-color: rgba(0, 0, 0, 0);
-    border-bottom-color: #000;
+    border-bottom-color: #303030;
     border-width: 30px;
     margin-left: -30px;
   }
@@ -356,15 +311,43 @@ p {
   text-align: left;
 }
 .Process {
-  color: #ffffff;
-  background: #303030;
+  color: #2c6892;
+  background: #cef2ff;
 }
 .Process-section-header {
-  font-weight: 300;
   font-size: 2.6rem;
+  font-weight: 300;
 }
-.Process-img {
+.Process-item {
+  position: relative;
+  padding: 0 0 0 2rem;
+  margin-bottom: 4rem;
+}
+.Process-item:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0.2rem;
+  height: 6rem;
+  background: #0099ce;
+  left: 0;
+  top: 0;
+}
+.Process-item-header {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+.Process-item-text {
+  font-size: 1.2rem;
+}
+.Process-item-placeholder {
   width: 100%;
+  text-align: center;
+}
+.Process-item-icon {
+  color: #303030;
+  font-size: 5rem;
 }
 .Demo {
   color: #ffffff;
