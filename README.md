@@ -1,1 +1,1 @@
-[www.appyard.no](http://www.appyard.no)
+[appyard.no](http://appyard.no)
