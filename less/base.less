@@ -1,6 +1,10 @@
 // out: ../css/base.css, sourcemap: true, compress: false
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+@import (inline) "../bower_components/normalize-css/normalize.css";
+@import (inline) "../bower_components/wow/css/libs/animate.css";
+@import (inline) "../bower_components/flexboxgrid/dist/flexboxgrid.min.css";
+@import (inline) "../bower_components/owlcarousel/owl-carousel/owl.carousel.css";
+@import (inline) "../bower_components/owlcarousel/owl-carousel/owl.theme.css";
 
 @dark-blue: #2c6892;
 @light-blue: #0099ce;
@@ -16,6 +20,8 @@ body {
   font-size: 1rem;
   box-sizing: border-box;
   background: @dark-blue;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6, p {
