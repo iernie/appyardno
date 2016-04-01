@@ -3339,6 +3339,9 @@ h6,
 p {
   line-height: 1.45;
 }
+strong {
+  font-weight: 700;
+}
 *,
 *:before,
 *:after {
@@ -3758,4 +3761,15 @@ p {
   .Images-list-nav-button {
     display: none;
   }
+}
+.Beacons {
+  background: #ffffff url("../img/beacons.jpg") no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  font-weight: 300;
+}
+.Beacons-section-header {
+  font-size: 2.6rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
 }
