@@ -3766,10 +3766,19 @@ strong {
   background: #ffffff url("../img/beacons.jpg") no-repeat center center;
   background-size: cover;
   color: #ffffff;
-  font-weight: 300;
 }
 .Beacons-section-header {
   font-size: 2.6rem;
   font-weight: 300;
   margin-bottom: 4rem;
+}
+.Beacons-section-header span {
+  background: rgba(48, 48, 48, 0.8);
+}
+.Beacons-text {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 0.5rem;
+  background: rgba(48, 48, 48, 0.8);
 }
