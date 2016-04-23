@@ -3584,14 +3584,15 @@ strong {
   line-height: 3rem;
 }
 .Info-section-header span {
-  background: rgba(230, 230, 230, 0.8);
+  background: rgba(230, 230, 230, 0.9);
 }
 .Info-text {
   margin-top: 1rem;
   font-size: 1.2rem;
+  font-weight: 300;
   line-height: 2rem;
   padding: 0.5rem;
-  background: rgba(230, 230, 230, 0.8);
+  background: rgba(230, 230, 230, 0.9);
 }
 @media only screen and (min-width: 320px) and (max-width: 991px) {
   .Info {
@@ -3681,13 +3682,13 @@ strong {
   font-size: 2.6rem;
 }
 .Demo-section-header span {
-  background: rgba(48, 48, 48, 0.8);
+  background: rgba(48, 48, 48, 0.9);
 }
 .Demo-text {
   font-size: 1.2rem;
   line-height: 2rem;
   padding: 0.5rem;
-  background: rgba(48, 48, 48, 0.8);
+  background: rgba(48, 48, 48, 0.9);
   margin-bottom: 6rem;
 }
 .Demo-link {
@@ -3778,7 +3779,18 @@ strong {
 .Beacons-text {
   margin-top: 1rem;
   font-size: 1.2rem;
+  font-weight: 300;
   line-height: 2rem;
   padding: 0.5rem;
   background: rgba(48, 48, 48, 0.8);
+}
+.Newsletters {
+  background: #303030;
+  color: #ffffff;
+  min-height: 20rem;
+  margin-bottom: -5rem;
+}
+.Newsletters-section-header {
+  font-size: 2.6rem;
+  font-weight: 300;
 }
