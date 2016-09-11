@@ -12,20 +12,26 @@ Install
 
 ### bower
 `bower install flexboxgrid`
-
 ### cdn
+
+<code>Cloudflare</code>
 ```
-<link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+```
+
+<code>jsDelivr</code>
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 ```
 
 ### css
 * [Development](https://raw.githubusercontent.com/kristoferjoseph/flexboxgrid/master/dist/flexboxgrid.css)
 * [Production](https://raw.githubusercontent.com/kristoferjoseph/flexboxgrid/master/dist/flexboxgrid.min.css)
 
-Add the `flexbox.css` __development__ or `flexbox.min.css` __production__ to your html page.
+Add the `flexboxgrid.css` __development__ or `flexboxgrid.min.css` __production__ to your html page.
 
 ```
-<link rel="stylesheet" href="css/flexbox.min.css" type="text/css">
+<link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
 ```
 Inspiration
 -----------

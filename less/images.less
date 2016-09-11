@@ -1,7 +1,7 @@
 // main: base.less
 .Images {
   color: @black;
-  background: @white;
+  background: @white url("../img/bg3.png") no-repeat bottom right;
   &-wrapper {
     position: relative;
   }
@@ -11,8 +11,8 @@
     }
     &-nav-button {
       display: inline-block;
-      color: @dark-blue;
-      background: darken(@white, 5%);
+      color: @white;
+      background: @pink;
       border-radius: 2.7rem;
       font-size: 2rem;
       height: 2.7rem;
@@ -27,7 +27,7 @@
       transition: linear 0.05s;
       &:hover {
         color: @black;
-        background: darken(@white, 10%);
+        background: @pink;
       }
       &--prev {
         position: absolute;

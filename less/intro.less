@@ -5,7 +5,7 @@
   min-height: 100%;
   position: relative;
   overflow: hidden;
-  background: #1f648a conic-gradient(#1f648a 35%, #2a4a69 0 65%, #355578 0);
+  background: @blue url("../img/bg1.png") no-repeat bottom left;
   text-align: center;
   &-logo {
     display: block;
@@ -37,7 +37,8 @@
     border: 0.125rem solid @white;
     transition: linear 0.1s;
     &:hover {
-      background: fade(@light-blue, 70%);
+      background: @black;
+      border-color: @black;
     }
   }
 }

@@ -1,6 +1,7 @@
 {
   "name": "flexboxgrid",
-  "version": "6.3.0",
+  "version": "6.3.2",
+  "license": "Apache 2",
   "homepage": "https://github.com/kristoferjoseph/flexboxgrid",
   "authors": [
     "@dam"
@@ -13,7 +14,6 @@
     "grid",
     "css"
   ],
-  "license": "Apache 2",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -21,13 +21,13 @@
     "test",
     "tests"
   ],
-  "_release": "6.3.0",
+  "_release": "6.3.2",
   "_resolution": {
     "type": "version",
-    "tag": "v6.3.0",
-    "commit": "13fc4e397a0e8a150466bb42835de85d28193824"
+    "tag": "v6.3.2",
+    "commit": "6492775d723d16e0950c4e1c1e46e7ff4e9473cd"
   },
-  "_source": "git://github.com/kristoferjoseph/flexboxgrid.git",
+  "_source": "https://github.com/kristoferjoseph/flexboxgrid.git",
   "_target": "^6.3.0",
   "_originalSource": "flexboxgrid"
 }
