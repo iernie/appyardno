@@ -3448,7 +3448,7 @@ strong {
   background-image: url("../img/appyard-logo-black.png"), url("../img/bg2.png");
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
-  background-size: 30%, 50%;
+  background-size: 25%, contain;
   background-color: #2b9eb3;
 }
 .Contact-section-header {
@@ -3709,7 +3709,7 @@ strong {
 }
 .Images {
   color: #0d1f2d;
-  background: #f0f0f0 url("../img/bg3.png") no-repeat bottom right;
+  background: #f0f0f0 url("../img/bg3.png") no-repeat center center;
 }
 .Images-wrapper {
   position: relative;
