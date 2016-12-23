@@ -4,7 +4,8 @@ import ScrollReveal from 'scrollreveal';
 import SmoothScroll from 'smooth-scroll';
 import classNames from 'classnames';
 import { browserHistory } from 'react-router';
-import Carousel from './components/carousel';
+import Carousel from './components/Carousel';
+import GoogleMaps from './components/GoogleMaps';
 
 class App extends React.Component {
   constructor(props) {
@@ -322,7 +323,7 @@ class App extends React.Component {
             <h1 className="Map-contactBox-header">Kontor</h1>
             <p className="Map-contactBox-text">Martin Lingesvei 25<br />1364 Fornebu</p>
           </div>
-          <div id="Map" className="Map-item" />
+          <GoogleMaps />
         </div>
       </section>
 
