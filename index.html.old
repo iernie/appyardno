@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Appyard Notify er en fleksibel og skalèrbar app-plattform for bedrifter og organisasjoner">
+    <meta name="author" content="Appyard AS">
+
+    <title>Appyard AS</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#2b9eb3">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#2b9eb3">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.min.css">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script src="bower_components/prefixfree/prefixfree.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="bower_components/smoothscroll-for-websites/SmoothScroll.js"></script>
+    <script src="bower_components/mobile-detect/mobile-detect.min.js"></script>
+    <script src="bower_components/Flowtype.js/flowtype.js"></script>
+    <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+    <script src="bower_components/noty/js/noty/jquery.noty.js"></script>
+    <script src="js/noty.appyard.layout.min.js"></script>
+    <script src="js/noty.appyard.theme.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TN2579"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TN2579');</script>
+    <!-- End Google Tag Manager -->
+    <section class="Section Section--noclip">
+      <div class="Section-content Intro">
+        <div class="Section-content-box">
+          <div class="row">
+            <div class="col-md">
+              <img src="img/appyard-logo-white.png" alt="Appyard logo" class="Intro-logo">
+              <div class="Intro-text fadeInUp">
+                Målrettet styring av informasjon til dine brukere og målgruppe. En egen mobilapplikasjon for din organisasjon.
+              </div>
+              <a data-scroll id="kontakt" href="#contact" class="Intro-button fadeInDown">Kontakt</a>
+              <a data-scroll id="lesmer" href="#more" class="Intro-button fadeInDown">Les mer</a>
+              <img src="img/intro.png" alt="Intro bilde" class="Intro-img bounceInUp">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section">
+      <div class="Section-content Info" id="more">
+        <div class="Section-content-box">
+          <div class="row">
+            <div class="col-sm-offset-4 col-sm-8 col-lg-6 col-lg-offset-6 fadeInRight">
+              <h1 class="Info-section-header">
+                <span>Visste du at 88% av mobilbrukere bruker apps?</span>
+              </h1>
+              <div class="Info-text">
+                En vanlig mobilbruker ser på telefonen sin 150 ganger uten av de har mottatt eller sendt en melding.
+              </div>
+              <div class="Info-text">
+                Appyard Notify er en fleksibel og skalèrbar app-plattform som er spesielt egnet for organisasjoner som har behov for å distribuere informasjon til sine medlemmer, kunder, innbyggere eller studenter.
+              </div>
+              <div class="Info-text">
+                Notify tilpasses din organisasjon med eget app-ikon, farger og ikoner i app samt en egen publiseringsportal, hvor man enkelt kan publisere nyheter.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section">
+      <div class="Section-content Perks">
+        <div class="Section-content-box">
+          <h1 class="Perks-section-header">Fordeler</h1>
+          <div class="row">
+            <div class="col-sm-4 col-xs-12 fadeIn">
+              <div class="Perks-item">
+                <i class="Perks-item-icon fa fa-apple"></i>
+                <i class="Perks-item-icon fa fa-android"></i>
+                <h2 class="Perks-item-header">Tilgjengelighet</h2>
+                <div class="Perks-item-text">
+                  En helt egen native app tilgjengelig i både Apple App Store og Google Play Store
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 fadeIn">
+              <div class="Perks-item">
+                <i class="Perks-item-icon fa fa-bell-o"></i>
+                <h2 class="Perks-item-header">Pushmelding</h2>
+                <div class="Perks-item-text">
+                  Pushmeldinger til brukerne tilknyttet nyheter, tilbud, varslinger o.l.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 fadeIn">
+              <div class="Perks-item">
+                <i class="Perks-item-icon fa fa-envelope-o"></i>
+                <h2 class="Perks-item-header">Rett informasjon til rett person</h2>
+                <div class="Perks-item-text">
+                  La brukerne selv velge hva de vil abonnere på av nyheter
+                </div </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 fadeIn">
+              <div class="Perks-item">
+                <i class="Perks-item-icon fa fa-globe"></i>
+                <h2 class="Perks-item-header">Globale meldinger</h2>
+                <div class="Perks-item-text">
+                  Lag nyheter som alle brukerne vil få
+                </div </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 fadeIn">
+              <div class="Perks-item">
+                <i class="Perks-item-icon fa fa-desktop"></i>
+                <h2 class="Perks-item-header">CMS</h2>
+                <div class="Perks-item-text">
+                  Egen, intuitiv CMS-portal for administrering av appen
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 fadeIn">
+              <div class="Perks-item">
+                <i class="Perks-item-icon fa fa-paint-brush"></i>
+                <h2 class="Perks-item-header">Tilpasset</h2>
+                <div class="Perks-item-text">
+                  App satt opp i din organisasjons profil
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 fadeIn">
+              <div class="Perks-item">
+                <i class="Perks-item-icon fa fa-refresh"></i>
+                <h2 class="Perks-item-header">Automatisk oppdatering</h2>
+                <div class="Perks-item-text">
+                  Når det publiseres nytt innhold, vil appen oppdateres automatisk
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 fadeIn">
+              <div class="Perks-item">
+                <i class="Perks-item-icon fa fa-bluetooth-b"></i>
+                <h2 class="Perks-item-header">Beaconintegrasjon</h2>
+                <div class="Perks-item-text">
+                  Automatisere informasjonsspredningen i lokalområder med beacons
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 fadeIn">
+              <div class="Perks-item">
+                <i class="Perks-item-icon fa fa-rocket"></i>
+                <h2 class="Perks-item-header">Enkelt</h2>
+                <div class="Perks-item-text">
+                  Appyard håndterer all kommunikasjon med Apple og Google. Ingen opplæring nødvendig!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section">
+      <div class="Section-content Beacons">
+        <div class="Section-content-box">
+          <div class="row">
+            <div class="col-md-8 fadeInUp">
+              <h1 class="Beacons-section-header"><span>Proximity Information - Beacons</span></h1>
+              <div class="Beacons-text"><strong>Proximity Information</strong> eller <strong>Informasjon i nærheten</strong> er et konsept som består av Notify applikasjon og beaconteknologi.</div>
+              <div class="Beacons-text">Proximity Information er et konsept som sørger for at man får informasjon tilsendt som en pushmelding på sin mobil avhengig av hvor man befinner seg i et bymiljø eller andre lokasjoner.</div>
+              <div class="Beacons-text">Dersom man for eksempel befinner seg i nærheten av en kino, kan man få tilsendt dagens filmer, pris og kanskje en rabattkupong på popcorn direkte til sin mobiltelefon.<br><strong>Fiffig, ikke sant?</strong></div>
+              <div class="Beacons-text">Alle applikasjoner fra Appyard blir levert <strong>ferdig integrert</strong> med beacons!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section">
+      <div class="Section-content Process">
+        <div class="Section-content-box">
+          <h1 class="Process-section-header">Prosessen</h1>
+          <div class="row middle-xs reverse">
+            <div class="col-sm-6 Process-item-placeholder fadeInRight">
+              <i class="Process-item-icon fa fa-users"></i>
+            </div>
+            <div class="col-sm-6 fadeInLeft">
+              <div class="Process-item">
+                <h2 class="Process-item-header">Dag 1</h2>
+                <span class="Process-item-text">
+                  Vi gjennomfører en kort workshop med dere hvor vi bestemmer oss for oppsett og bruk av applikasjonen, hvem som skal være redaktør etc.
+                </span>
+              </div>
+            </div>
+            <div class="col-sm-6 Process-item-placeholder fadeInRight">
+              <i class="Process-item-icon fa fa-file-image-o"></i>
+            </div>
+            <div class="col-sm-6 fadeInLeft">
+              <div class="Process-item">
+                <h2 class="Process-item-header">Dag 2</h2>
+                <span class="Process-item-text">
+                  Dere sender oss deres profilhåndbok og bilder, slik at vi kan skreddersy applikasjonen for dere.
+                </span>
+              </div>
+            </div>
+            <div class="col-sm-6 Process-item-placeholder fadeInRight">
+              <i class="Process-item-icon fa fa-pencil-square-o"></i>
+            </div>
+            <div class="col-sm-6 fadeIn">
+              <div class="Process-item">
+                <h2 class="Process-item-header">Dag 3 &ndash; 5</h2>
+                <span class="Process-item-text">
+                  Vi lager et forslag til hvordan applikasjonen skal se ut. Vi jobber med dette til dere er fornøyd.
+                </span>
+              </div>
+            </div>
+            <div class="col-sm-6 Process-item-placeholder fadeInRight">
+              <i class="Process-item-icon fa fa-cogs"></i>
+            </div>
+            <div class="col-sm-6 fadeIn">
+              <div class="Process-item">
+                <h2 class="Process-item-header">Dag 6</h2>
+                <span class="Process-item-text">
+                  Applikasjonen settes i produksjon, hvor den blir sendt til
+                  <strong>Apple</strong>
+                  og
+                  <strong>Google</strong>
+                  for godkjenning.
+                </span>
+              </div>
+            </div>
+            <div class="col-sm-6 Process-item-placeholder fadeInRight">
+              <i class="Process-item-icon fa fa-download"></i>
+            </div>
+            <div class="col-sm-6 fadeIn">
+              <div class="Process-item">
+                <h2 class="Process-item-header">Dag 17</h2>
+                <span class="Process-item-text">
+                  Appen er klar for nedlasting før dere rekker å si
+                  <strong>epostutsendelsesskrivefeil</strong>.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section">
+      <div class="Section-content Images">
+        <div class="Section-content-box">
+          <h1 class="Images-section-header">Skjermbilder</h1>
+          <div class="Images-wrapper">
+            <div class="Image-list fadeInUp">
+              <div class="Images-list-item"><img class="Images-img" src="img/gallery.png"></div>
+              <div class="Images-list-item"><img class="Images-img" src="img/cms.png"></div>
+              <div class="Images-list-item"><img class="Images-img" src="img/sc1.png"></div>
+              <div class="Images-list-item"><img class="Images-img" src="img/sc2.png"></div>
+              <div class="Images-list-item"><img class="Images-img" src="img/sc3.png"></div>
+              <div class="Images-list-item"><img class="Images-img" src="img/sc4.png"></div>
+              <div class="Images-list-item"><img class="Images-img" src="img/sc5.png"></div>
+            </div>
+            <div class="Images-list-nav">
+              <a class="Images-list-nav-button Images-list-nav-button--prev">
+                <i class="fa fa-angle-left"></i>
+              </a>
+              <a class="Images-list-nav-button Images-list-nav-button--next">
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section">
+      <div class="Section-content Demo">
+        <div class="Section-content-box">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="Demo-section-header">
+                <span>Ikke overbevist?<br>Prøv selv!</span>
+              </h1>
+              <div class="Demo-text">Nedenfor kan du laste ned demo-appen vår til iOS og Android</div>
+              <a id="ios" href="https://itunes.apple.com/no/app/appyard/id970118800" target="_blank"><img class="Demo-link fadeInDown" src="img/appstore.png"></a>
+              <a id="android" href="https://play.google.com/store/apps/details?id=no.appyard.appyard" target="_blank"><img class="Demo-link fadeInDown" src="img/playstore.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section">
+      <div class="Section-content Contact" id="contact">
+        <div class="Section-content-box">
+          <h1 class="Contact-section-header fadeInUp">Er dette noe du kunne tenke deg?<br>Kontakt oss i dag!</h2>
+
+          <div class="Contact-text">Legg igjen din epost eller telefonnummer så kontakter vi deg med et uforpliktende tilbud.</p>
+          <form id="form" class="Contact-form" method="post" action="//formspree.io/michael@appyard.no">
+            <input class="Contact-form-input" name="kontakt-info" id="text" type="text" placeholder="Epost eller telefonnummer" value="" required>
+            <input class="Contact-form-input-alt" name="_subject" value="Jeg vil gjerne bli kontaktet">
+            <input class="Contact-form-input-alt" name="_next" value="/#takk">
+            <input class="Contact-form-input-alt" name="_gotcha" value="">
+            <button id="kontaktmeg" class="Contact-form-button" type="submit" class="pure-button">Kontakt meg</button>
+          </form>
+
+          <div class="Contact-social">
+            <p>Du finner oss også på sosiale medier</p>
+            <a id="facebook" class="Contact-social-badge" href="https://www.facebook.com/pages/Appyard/380568655456149" target="_blank">
+              <i class="fa fa-facebook-square fadeInDown"></i>
+            </a>
+            <a id="linkedin" class="Contact-social-badge" href="https://www.linkedin.com/company/appyard-as?trk=company_logo" target="_blank">
+              <i class="fa fa-linkedin-square fadeInDown"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section">
+      <div class="Section-content Map">
+        <div class="Map-contactBox bounceInDown" data-wow-offset="10">
+          <h1 class="Map-contactBox-header">Kontor</h1>
+          <p class="Map-contactBox-text">Martin Lingesvei 25<br>1364 Fornebu</p>
+        </div>
+        <div id="Map" class="Map-item"></div>
+      </div>
+    </section>
+
+    <script src="js/main.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIRD9Y93tSbxINqOUQplI4C_-9pQgWs-Y&callback=initMap" async defer></script>
+  </body>
+</html>

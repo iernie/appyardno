@@ -24,10 +24,10 @@ class App extends React.Component {
   }
   componentDidMount() {
     const sr = ScrollReveal();
-    sr.reveal('.fadeInDown, .bounceInDown', { delay: 250, origin: 'top' });
-    sr.reveal('.fadeInUp, .bounceInUp', { delay: 250, origin: 'bottom' });
-    sr.reveal('.fadeInRight, .bounceInRight', { delay: 250, origin: 'left' });
-    sr.reveal('.fadeInLeft, .bounceInLeft', { delay: 250, origin: 'right' });
+    sr.reveal('.fadeInDown', { delay: 250, origin: 'top' });
+    sr.reveal('.fadeInUp', { delay: 250, origin: 'bottom' });
+    sr.reveal('.fadeInRight', { delay: 250, origin: 'left' });
+    sr.reveal('.fadeInLeft', { delay: 250, origin: 'right' });
     sr.reveal('.fadeIn', { delay: 250 });
     SmoothScroll.init({ updateURL: false });
   }
@@ -43,12 +43,12 @@ class App extends React.Component {
             <div className="row">
               <div className="col-md">
                 <img src="static/img/appyard-logo-white.png" alt="Appyard logo" className="Intro-logo" />
-                <div className="Intro-text wow fadeInUp">
+                <div className="Intro-text fadeInUp">
                   Målrettet styring av informasjon til dine brukere og målgruppe. En egen mobilapplikasjon for din organisasjon.
                 </div>
-                <a data-scroll id="kontakt" href="#contact" className="Intro-button wow fadeInDown">Kontakt</a>
-                <a data-scroll id="lesmer" href="#more" className="Intro-button wow fadeInDown">Les mer</a>
-                <img src="static/img/intro.png" alt="Intro bilde" className="Intro-img wow bounceInUp" />
+                <a data-scroll id="kontakt" href="#contact" className="Intro-button fadeInDown">Kontakt</a>
+                <a data-scroll id="lesmer" href="#more" className="Intro-button fadeInDown">Les mer</a>
+                <img src="static/img/intro.png" alt="Intro bilde" className="Intro-img fadeInUp" />
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@ class App extends React.Component {
         <div className="Section-content Info" id="more">
           <div className="Section-content-box">
             <div className="row">
-              <div className="col-sm-offset-4 col-sm-8 col-lg-6 col-lg-offset-6 wow fadeInRight">
+              <div className="col-sm-offset-4 col-sm-8 col-lg-6 col-lg-offset-6 fadeInRight">
                 <h1 className="Info-section-header">
                   <span>Visste du at 88% av mobilbrukere bruker apps?</span>
                 </h1>
@@ -83,7 +83,7 @@ class App extends React.Component {
           <div className="Section-content-box">
             <h1 className="Perks-section-header">Fordeler</h1>
             <div className="row">
-              <div className="col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.1s">
+              <div className="col-sm-4 col-xs-12 fadeIn">
                 <div className="Perks-item">
                   <FontAwesome className="Perks-item-icon" name="apple" />
                   <FontAwesome className="Perks-item-icon" name="android" />
@@ -93,7 +93,7 @@ class App extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.2s">
+              <div className="col-sm-4 col-xs-12 fadeIn">
                 <div className="Perks-item">
                   <FontAwesome className="Perks-item-icon" name="bell-o" />
                   <h2 className="Perks-item-header">Pushmelding</h2>
@@ -102,7 +102,7 @@ class App extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.3s">
+              <div className="col-sm-4 col-xs-12 fadeIn">
                 <div className="Perks-item">
                   <FontAwesome className="Perks-item-icon" name="envelope-o" />
                   <h2 className="Perks-item-header">Rett informasjon til rett person</h2>
@@ -111,7 +111,7 @@ class App extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.4s">
+              <div className="col-sm-4 col-xs-12 fadeIn">
                 <div className="Perks-item">
                   <FontAwesome className="Perks-item-icon" name="globe" />
                   <h2 className="Perks-item-header">Globale meldinger</h2>
@@ -120,7 +120,7 @@ class App extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.5s">
+              <div className="col-sm-4 col-xs-12 fadeIn">
                 <div className="Perks-item">
                   <FontAwesome className="Perks-item-icon" name="desktop" />
                   <h2 className="Perks-item-header">CMS</h2>
@@ -129,7 +129,7 @@ class App extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.6s">
+              <div className="col-sm-4 col-xs-12 fadeIn">
                 <div className="Perks-item">
                   <FontAwesome className="Perks-item-icon" name="paint-brush" />
                   <h2 className="Perks-item-header">Tilpasset</h2>
@@ -138,7 +138,7 @@ class App extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.7s">
+              <div className="col-sm-4 col-xs-12 fadeIn">
                 <div className="Perks-item">
                   <FontAwesome className="Perks-item-icon" name="refresh" />
                   <h2 className="Perks-item-header">Automatisk oppdatering</h2>
@@ -147,7 +147,7 @@ class App extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.8s">
+              <div className="col-sm-4 col-xs-12 fadeIn">
                 <div className="Perks-item">
                   <FontAwesome className="Perks-item-icon" name="bluetooth-b" />
                   <h2 className="Perks-item-header">Beaconintegrasjon</h2>
@@ -156,7 +156,7 @@ class App extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.9s">
+              <div className="col-sm-4 col-xs-12 fadeIn">
                 <div className="Perks-item">
                   <FontAwesome className="Perks-item-icon" name="rocket" />
                   <h2 className="Perks-item-header">Enkelt</h2>
@@ -174,7 +174,7 @@ class App extends React.Component {
         <div className="Section-content Beacons">
           <div className="Section-content-box">
             <div className="row">
-              <div className="col-md-8 wow fadeInUp">
+              <div className="col-md-8 fadeInUp">
                 <h1 className="Beacons-section-header"><span>Proximity Information - Beacons</span></h1>
                 <div className="Beacons-text"><strong>Proximity Information</strong> eller <strong>Informasjon i nærheten</strong> er et konsept som består av Notify applikasjon og beaconteknologi.</div>
                 <div className="Beacons-text">Proximity Information er et konsept som sørger for at man får informasjon tilsendt som en pushmelding på sin mobil avhengig av hvor man befinner seg i et bymiljø eller andre lokasjoner.</div>
@@ -191,10 +191,10 @@ class App extends React.Component {
           <div className="Section-content-box">
             <h1 className="Process-section-header">Prosessen</h1>
             <div className="row middle-xs reverse">
-              <div className="col-sm-6 Process-item-placeholder wow fadeInRight" data-wow-delay="0.2s">
+              <div className="col-sm-6 Process-item-placeholder fadeInRight">
                 <FontAwesome className="Process-item-icon" name="users" />
               </div>
-              <div className="col-sm-6 wow fadeInLeft" data-wow-delay="0.1s">
+              <div className="col-sm-6 fadeInLeft">
                 <div className="Process-item">
                   <h2 className="Process-item-header">Dag 1</h2>
                   <span className="Process-item-text">
@@ -202,10 +202,10 @@ class App extends React.Component {
                   </span>
                 </div>
               </div>
-              <div className="col-sm-6 Process-item-placeholder wow fadeInRight" data-wow-delay="0.4s">
+              <div className="col-sm-6 Process-item-placeholder fadeInRight">
                 <FontAwesome className="Process-item-icon" name="file-image-o" />
               </div>
-              <div className="col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
+              <div className="col-sm-6 fadeInLeft">
                 <div className="Process-item">
                   <h2 className="Process-item-header">Dag 2</h2>
                   <span className="Process-item-text">
@@ -213,10 +213,10 @@ class App extends React.Component {
                   </span>
                 </div>
               </div>
-              <div className="col-sm-6 Process-item-placeholder wow fadeInRight" data-wow-delay="0.6s">
+              <div className="col-sm-6 Process-item-placeholder fadeInRight">
                 <FontAwesome className="Process-item-icon" name="pencil-square-o" />
               </div>
-              <div className="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+              <div className="col-sm-6 fadeIn">
                 <div className="Process-item">
                   <h2 className="Process-item-header">Dag 3 &ndash; 5</h2>
                   <span className="Process-item-text">
@@ -224,10 +224,10 @@ class App extends React.Component {
                   </span>
                 </div>
               </div>
-              <div className="col-sm-6 Process-item-placeholder wow fadeInRight" data-wow-delay="0.8s">
+              <div className="col-sm-6 Process-item-placeholder fadeInRight">
                 <FontAwesome className="Process-item-icon" name="cogs" />
               </div>
-              <div className="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+              <div className="col-sm-6 fadeIn">
                 <div className="Process-item">
                   <h2 className="Process-item-header">Dag 6</h2>
                   <span className="Process-item-text">
@@ -239,10 +239,10 @@ class App extends React.Component {
                   </span>
                 </div>
               </div>
-              <div className="col-sm-6 Process-item-placeholder wow fadeInRight" data-wow-delay="1s">
+              <div className="col-sm-6 Process-item-placeholder fadeInRight">
                 <FontAwesome className="Process-item-icon" name="download" />
               </div>
-              <div className="col-sm-6 wow fadeIn" data-wow-delay="0.9s">
+              <div className="col-sm-6 fadeIn">
                 <div className="Process-item">
                   <h2 className="Process-item-header">Dag 17</h2>
                   <span className="Process-item-text">
@@ -257,10 +257,84 @@ class App extends React.Component {
       </section>
 
       <section className="Section">
+        <div className="Section-content Customers">
+          <div className="Section-content-box">
+            <h1 className="Customers-section-header">Kundeomtale</h1>
+            <div className="row">
+              <div className="col-sm-6 col-xs-12 fadeIn">
+                <div className="Customers-quote">
+                  <p>Askim kommune har brukt Notify fra Appyard siden mai 2015 og er svært fornøyd med appen.</p>
+                  <p>Notify gir oss muligheten til å skreddersy informasjon og nyheter til ulike målgrupper. Dette har dermed blitt en pushkanal som vi bruker ofte, og den er et verdifullt tilskudd til våre andre mer tradisjonelle kanaler, som nettsider og sosiale medier.</p>
+                  <p>Vi føler oss også vel ivaretatt av Appyard. De har vist seg å gi god brukerstøtte, og de satser på utvikling av ny funksjonalitet og videreutvikling av produktet, noe som er viktig for oss som kunde.</p>
+                  <div className="Customers-quote-from">&mdash;Kirsti Nebbenes, Askim kommune.</div>
+                </div>
+              </div>
+              <div className="col-sm-6 col-xs-12 fadeIn">
+                <div className="Customers-quote">
+                  <p>Det er enkelt å bruke, det er kjapt og det er genialt. Denne appen bør alle Haldensere ha på mobilen. Dette er fremtiden!</p>
+                  <div className="Customers-quote-from">&mdash;Martin Vik, Halden kommune.</div>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-3 col-xs-4 fadeInDown">
+                <div className="Customers-item">
+                  <img className="Customers-item-img" src="static/img/aas.png" />
+                  Ås kommune
+                </div>
+              </div>
+              <div className="col-sm-3 col-xs-4 fadeInDown">
+                <div className="Customers-item">
+                  <img className="Customers-item-img" src="static/img/askim.png" />
+                  Askim kommune
+                </div>
+              </div>
+              <div className="col-sm-3 col-xs-4 fadeInDown">
+                <div className="Customers-item">
+                  <img className="Customers-item-img" src="static/img/eidsberg.png" />
+                  Eidsberg kommune
+                </div>
+              </div>
+              <div className="col-sm-3 col-xs-4 fadeInDown">
+                <div className="Customers-item">
+                  <img className="Customers-item-img" src="static/img/fjell.png" />
+                  Fjell kommune
+                </div>
+              </div>
+              <div className="col-sm-3 col-xs-4 fadeInDown">
+                <div className="Customers-item">
+                  <img className="Customers-item-img" src="static/img/halden.png" />
+                  Halden kommune
+                </div>
+              </div>
+              <div className="col-sm-3 col-xs-4 fadeInDown">
+                <div className="Customers-item">
+                  <img className="Customers-item-img" src="static/img/hobol.png" />
+                  Hobøl kommune
+                </div>
+              </div>
+              <div className="col-sm-3 col-xs-4 fadeInDown">
+                <div className="Customers-item">
+                  <img className="Customers-item-img" src="static/img/lenvik.png" />
+                  Lenvik kommune
+                </div>
+              </div>
+              <div className="col-sm-3 col-xs-4 fadeInDown">
+                <div className="Customers-item">
+                  <img className="Customers-item-img" src="static/img/spydeberg.png" />
+                  Spydeberg kommune
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="Section">
         <div className="Section-content Images">
           <div className="Section-content-box">
             <h1 className="Images-section-header">Skjermbilder</h1>
-            <Carousel className="Image-list wow fadeInUp">
+            <Carousel className="Image-list fadeInUp">
               <div className="Images-list-item"><img className="Images-img" src="static/img/gallery.png" /></div>
               <div className="Images-list-item"><img className="Images-img" src="static/img/cms.png" /></div>
               <div className="Images-list-item"><img className="Images-img" src="static/img/sc1.png" /></div>
@@ -282,8 +356,8 @@ class App extends React.Component {
                   <span>Ikke overbevist?<br />Prøv selv!</span>
                 </h1>
                 <div className="Demo-text">Nedenfor kan du laste ned demo-appen vår til iOS og Android</div>
-                <a id="ios" href="https://itunes.apple.com/no/app/appyard/id970118800" target="_blank" rel="noopener noreferrer"><img className="Demo-link wow fadeInDown" data-wow-delay="0.1s" src="static/img/appstore.png" /></a>
-                <a id="android" href="https://play.google.com/store/apps/details?id=no.appyard.appyard" target="_blank" rel="noopener noreferrer"><img className="Demo-link wow fadeInDown" data-wow-delay="0.2s" src="static/img/playstore.png" /></a>
+                <a id="ios" href="https://itunes.apple.com/no/app/appyard/id970118800" target="_blank" rel="noopener noreferrer"><img className="Demo-link fadeInDown" src="static/img/appstore.png" /></a>
+                <a id="android" href="https://play.google.com/store/apps/details?id=no.appyard.appyard" target="_blank" rel="noopener noreferrer"><img className="Demo-link fadeInDown" src="static/img/playstore.png" /></a>
               </div>
             </div>
           </div>
@@ -293,7 +367,7 @@ class App extends React.Component {
       <section className="Section">
         <div className="Section-content Contact" id="contact">
           <div className="Section-content-box">
-            <h1 className="Contact-section-header wow fadeInUp">Er dette noe du kunne tenke deg?<br />Kontakt oss i dag!</h1>
+            <h1 className="Contact-section-header fadeInUp">Er dette noe du kunne tenke deg?<br />Kontakt oss i dag!</h1>
 
             <p className="Contact-text">Legg igjen din epost eller telefonnummer så kontakter vi deg med et uforpliktende tilbud.</p>
             <form id="form" className="Contact-form" method="post" action="//formspree.io/michael@appyard.no">
@@ -307,10 +381,10 @@ class App extends React.Component {
             <div className="Contact-social">
               <p>Du finner oss også på sosiale medier</p>
               <a id="facebook" className="Contact-social-badge" href="https://www.facebook.com/pages/Appyard/380568655456149" target="_blank" rel="noopener noreferrer">
-                <FontAwesome className="wow fadeInDown" data-wow-delay="0.1s" name="facebook-square" />
+                <FontAwesome className="fadeInDown" name="facebook-square" />
               </a>
               <a id="linkedin" className="Contact-social-badge" href="https://www.linkedin.com/company/appyard-as?trk=company_logo" target="_blank" rel="noopener noreferrer">
-                <FontAwesome className="wow fadeInDown" data-wow-delay="0.2s" name="linkedin-square" />
+                <FontAwesome className="fadeInDown" name="linkedin-square" />
               </a>
             </div>
           </div>
@@ -319,7 +393,7 @@ class App extends React.Component {
 
       <section className="Section">
         <div className="Section-content Map">
-          <div className="Map-contactBox wow bounceInDown" data-wow-offset="10">
+          <div className="Map-contactBox fadeInDown">
             <h1 className="Map-contactBox-header">Kontor</h1>
             <p className="Map-contactBox-text">Martin Lingesvei 25<br />1364 Fornebu</p>
           </div>
