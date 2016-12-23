@@ -3,8 +3,10 @@
   min-height: 100%;
   position: relative;
   overflow: hidden;
-  background: @blue url("../img/bg1.png") no-repeat bottom left;
+  background: @black url("../img/landing2.png") no-repeat;
+  background-size: cover;
   text-align: center;
+  min-height: 60rem;
   &-logo {
     display: block;
     margin: 0 auto;
@@ -19,13 +21,13 @@
     margin-top: 1rem;
     color: @white;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     line-height: 2rem;
   }
   &-button {
     font-size: 1.5rem;
-    margin: 2rem 0.5rem;
+    margin: 6rem 0.5rem 0;
     display: inline-block;
     border: none;
     border-radius: 3px;
@@ -35,7 +37,7 @@
     border: 0.125rem solid @white;
     transition: linear 0.1s;
     cursor: pointer;
-    background: @blue;
+    font-weight: 400;
     &:hover {
       background: @black;
       border-color: @black;

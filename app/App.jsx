@@ -47,7 +47,6 @@ class App extends React.Component {
                   Målrettet styring av informasjon til dine brukere og målgruppe.<br />En egen mobilapplikasjon for din organisasjon.
                 </div>
                 <a data-scroll id="lesmer" href="#more" className="Intro-button fadeInDown">Les mer</a>
-                <img src="static/img/intro.png" alt="Intro bilde" className="Intro-img fadeInUp" />
               </div>
             </div>
           </div>
@@ -334,31 +333,13 @@ class App extends React.Component {
           <div className="Section-content-box">
             <h1 className="Images-section-header">Skjermbilder</h1>
             <Carousel className="Image-list fadeInUp">
-              <div className="Images-list-item"><img className="Images-img" src="static/img/gallery.png" /></div>
-              <div className="Images-list-item"><img className="Images-img" src="static/img/cms.png" /></div>
               <div className="Images-list-item"><img className="Images-img" src="static/img/sc1.png" /></div>
               <div className="Images-list-item"><img className="Images-img" src="static/img/sc2.png" /></div>
               <div className="Images-list-item"><img className="Images-img" src="static/img/sc3.png" /></div>
               <div className="Images-list-item"><img className="Images-img" src="static/img/sc4.png" /></div>
               <div className="Images-list-item"><img className="Images-img" src="static/img/sc5.png" /></div>
+              <div className="Images-list-item"><img className="Images-img" src="static/img/cms.png" /></div>
             </Carousel>
-          </div>
-        </div>
-      </section>
-
-      <section className="Section">
-        <div className="Section-content Demo">
-          <div className="Section-content-box">
-            <div className="row">
-              <div className="col-lg-6">
-                <h1 className="Demo-section-header">
-                  <span>Ikke overbevist?<br />Prøv selv!</span>
-                </h1>
-                <div className="Demo-text">Nedenfor kan du laste ned demo-appen vår til iOS og Android</div>
-                <a id="ios" href="https://itunes.apple.com/no/app/appyard/id970118800" target="_blank" rel="noopener noreferrer"><img className="Demo-link fadeInDown" src="static/img/appstore.png" /></a>
-                <a id="android" href="https://play.google.com/store/apps/details?id=no.appyard.appyard" target="_blank" rel="noopener noreferrer"><img className="Demo-link fadeInDown" src="static/img/playstore.png" /></a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
