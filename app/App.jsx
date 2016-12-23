@@ -23,12 +23,12 @@ class App extends React.Component {
     }
   }
   componentDidMount() {
-    const sr = ScrollReveal();
-    sr.reveal('.fadeInDown', { delay: 250, origin: 'top' });
-    sr.reveal('.fadeInUp', { delay: 250, origin: 'bottom' });
-    sr.reveal('.fadeInRight', { delay: 250, origin: 'left' });
-    sr.reveal('.fadeInLeft', { delay: 250, origin: 'right' });
-    sr.reveal('.fadeIn', { delay: 250 });
+    const sr = ScrollReveal({ delay: 250 });
+    sr.reveal('.fadeInDown', { origin: 'top' });
+    sr.reveal('.fadeInUp', { origin: 'bottom' });
+    sr.reveal('.fadeInRight', { origin: 'left' });
+    sr.reveal('.fadeInLeft', { origin: 'right' });
+    sr.reveal('.fadeIn');
     SmoothScroll.init({ updateURL: false });
   }
   render() {
