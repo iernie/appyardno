@@ -35,14 +35,14 @@ class App extends React.Component {
         lng: 10.6287
       };
 
-      const customMapType = new google.maps.StyledMapType([{
+      const customMapType = new google.maps.StyledMapType([{ // eslint-disable-line no-undef
         stylers: [{
           saturation: -100
         }]
       }]);
       const customMapTypeId = 'appyard';
 
-      const map = new google.maps.Map(document.getElementById('Map'), {
+      const map = new google.maps.Map(document.getElementById('Map'), { // eslint-disable-line no-undef
         center: point,
         zoom: 12,
         disableDefaultUI: true,
@@ -53,14 +53,14 @@ class App extends React.Component {
         draggable: false
       });
 
-      new google.maps.Marker({
+      const marker = new google.maps.Marker({ // eslint-disable-line no-undef, no-unused-vars
         position: point,
         map
       });
 
       map.mapTypes.set(customMapTypeId, customMapType);
       map.setMapTypeId(customMapTypeId);
-    }
+    };
   }
   render() {
     const notificationClass = classNames({

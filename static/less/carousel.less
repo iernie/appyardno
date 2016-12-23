@@ -3,10 +3,6 @@
 
   &-container {
     overflow: hidden;
-
-    &-container {
-      position: relative;
-    }
   }
 
   &-list {
@@ -113,6 +109,29 @@
 
       &:hover, &:focus {
         border-color: @pink;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .Carousel {
+    &-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    &-buttons {
+      &-left {
+        left: 0;
+        &:hover {
+          left: 0;
+        }
+      }
+      &-right {
+        right: 0;
+        &:hover {
+          right: 0;
+        }
       }
     }
   }
