@@ -1,0 +1,32 @@
+.Perks {
+  color: @white;
+  background: @black url("../img/bg4.png") no-repeat top right;
+
+  &-section-header {
+    font-weight: 300;
+    font-size: 2.6rem;
+  }
+  &-item {
+    margin-top: 4rem;
+    text-align: center;
+    transition: linear .1s;
+    &:hover {
+      color: @yellow;
+    }
+    &-icon {
+      font-size: 4rem;
+      color: @green;
+      &--bigger {
+        font-size: 5rem;
+      }
+    }
+    &-header {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      text-transform: uppercase;
+    }
+    &-text {
+      font-size: 1.2rem;
+    }
+  }
+}

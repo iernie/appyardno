@@ -1,0 +1,119 @@
+.Carousel {
+  position: relative;
+
+  &-container {
+    overflow: hidden;
+
+    &-container {
+      position: relative;
+    }
+  }
+
+  &-list {
+    overflow: auto;
+  	margin: 0;
+  	padding: 0;
+    list-style: none;
+  	margin: 0;
+  	padding: 0;
+    position: relative;
+  	border: none;
+    transition: all ease-in-out .5s;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+    &-item {
+      display: table-cell;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-align: center;
+
+      > * {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+      }
+    }
+  }
+
+  &-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background: transparent;
+    height: 3rem;
+    outline: none;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      color: @pink;
+    }
+
+    &-left {
+      left: -3rem;
+      transition: all linear .1s;
+      &:hover {
+        left: -3.3rem;
+      }
+    }
+
+    &-right {
+      right: -5rem;
+      transition: all linear .1s;
+
+      &:hover {
+        right: -5.3rem;
+      }
+
+      &-content {
+        transition: all 0.1s linear;
+        opacity: 1;
+      }
+    }
+  }
+
+  &-dots {
+    display: block;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      vertical-align: middle;
+      height: 0.75rem;
+      width: 0.75rem;
+      border-radius: 50%;
+      border: 0.125rem solid @black;
+      transition: all ease-in-out .1s;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      outline: none;
+
+      &-container {
+        display: inline-block;
+        list-style: none;
+        margin: 0 0.7rem;
+        padding: 0;
+      }
+
+      &--active {
+        background: @black;
+        height: 1rem;
+        width: 1rem;
+        &:hover, &:focus {
+          background: @pink;
+        }
+      }
+
+      &:hover, &:focus {
+        border-color: @pink;
+      }
+    }
+  }
+}

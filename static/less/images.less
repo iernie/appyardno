@@ -1,0 +1,33 @@
+.Images {
+  color: @black;
+  background: @white url("../img/bg3.png") no-repeat center center;
+  &-wrapper {
+    position: relative;
+  }
+  &-list {
+    &-item {
+      margin: 1rem;
+    }
+  }
+  &-section-header {
+    font-weight: 300;
+    font-size: 2.6rem;
+  }
+  &-img {
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 36rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .Images {
+    &-list {
+      &-nav-button {
+        display: none;
+      }
+    }
+  }
+}

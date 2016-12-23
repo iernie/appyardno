@@ -29,10 +29,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
-  <link href="/dist/bundle-5bfe4452b4d7348f52ca.css" rel="stylesheet"></head>
+    <% if (htmlWebpackPlugin.options.devMode) { %>
+    <link rel="stylesheet" href="http://localhost:3000/static/bundle.css"/>
+    <% } %>
+  </head>
   <body>
-    
+    <% if (!htmlWebpackPlugin.options.devMode) { %>
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TN2579"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -42,11 +44,13 @@
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TN2579');</script>
     <!-- End Google Tag Manager -->
-    
+    <% } %>
 
     <main id="app"></main>
 
-    
+    <% if (htmlWebpackPlugin.options.devMode) { %>
+    <script src="http://localhost:3000/static/bundle.js"></script>
+    <% } %>
     <script>
       function initMap() {
         var point = {
@@ -82,5 +86,5 @@
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIRD9Y93tSbxINqOUQplI4C_-9pQgWs-Y&callback=initMap" async defer></script>
-  <script type="text/javascript" src="/dist/bundle-5bfe4452b4d7348f52ca.js"></script></body>
+  </body>
 </html>

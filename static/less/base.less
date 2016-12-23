@@ -1,0 +1,66 @@
+@import (less) "../libs/normalize.css";
+@import (less) "../libs/flexboxgrid.css";
+
+@white: #f0f0f0;
+@blue: #2b9eb3;
+@yellow: #fcab10;
+@green: #44af69;
+@black: #0d1f2d;
+@pink: #ff1053;
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  color: @black;
+  background: @white;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::-moz-selection { background: lighten(@blue, 20%); }
+::selection { background: lighten(@blue, 20%); }
+
+@import "section";
+@import "intro";
+@import "contact";
+@import "map";
+@import "info";
+@import "perks";
+@import "process";
+@import "demo";
+@import "images";
+@import "beacons";
+@import "newsletters";
+@import "notification";
+
+@import "carousel";
