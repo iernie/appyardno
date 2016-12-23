@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
-  <link href="/dist/bundle-5bfe4452b4d7348f52ca.css" rel="stylesheet"></head>
+  <link href="/dist/bundle-23e3ce675fdde470f136.css" rel="stylesheet"></head>
   <body>
     
     <!-- Google Tag Manager -->
@@ -47,40 +47,6 @@
     <main id="app"></main>
 
     
-    <script>
-      function initMap() {
-        var point = {
-          lat: 59.899519,
-          lng: 10.6287
-        };
-
-        var customMapType = new google.maps.StyledMapType([{
-          stylers: [{
-            saturation: -100
-          }]
-        }]);
-        var customMapTypeId = 'appyard';
-
-        var map = new google.maps.Map(document.getElementById('Map'), {
-          center: point,
-          zoom: 12,
-          disableDefaultUI: true,
-          scrollwheel: false,
-          navigationControl: false,
-          mapTypeControl: false,
-          scaleControl: false,
-          draggable: false
-        });
-
-        var marker = new google.maps.Marker({
-          position: point,
-          map: map
-        });
-
-        map.mapTypes.set(customMapTypeId, customMapType);
-        map.setMapTypeId(customMapTypeId);
-      }
-    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIRD9Y93tSbxINqOUQplI4C_-9pQgWs-Y&callback=initMap" async defer></script>
-  <script type="text/javascript" src="/dist/bundle-5bfe4452b4d7348f52ca.js"></script></body>
+  <script type="text/javascript" src="/dist/bundle-23e3ce675fdde470f136.js"></script></body>
 </html>

@@ -29,6 +29,38 @@ class App extends React.Component {
     sr.reveal('.fadeInLeft, .bounceInLeft', { delay: 250, origin: 'right' });
     sr.reveal('.fadeIn', { delay: 250 });
     SmoothScroll.init({ updateURL: false });
+    window.initMap = () => {
+      const point = {
+        lat: 59.899519,
+        lng: 10.6287
+      };
+
+      const customMapType = new google.maps.StyledMapType([{
+        stylers: [{
+          saturation: -100
+        }]
+      }]);
+      const customMapTypeId = 'appyard';
+
+      const map = new google.maps.Map(document.getElementById('Map'), {
+        center: point,
+        zoom: 12,
+        disableDefaultUI: true,
+        scrollwheel: false,
+        navigationControl: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        draggable: false
+      });
+
+      new google.maps.Marker({
+        position: point,
+        map
+      });
+
+      map.mapTypes.set(customMapTypeId, customMapType);
+      map.setMapTypeId(customMapTypeId);
+    }
   }
   render() {
     const notificationClass = classNames({
@@ -295,7 +327,7 @@ class App extends React.Component {
             <h1 className="Contact-section-header wow fadeInUp">Er dette noe du kunne tenke deg?<br />Kontakt oss i dag!</h1>
 
             <p className="Contact-text">Legg igjen din epost eller telefonnummer så kontakter vi deg med et uforpliktende tilbud.</p>
-            <form id="form" className="Contact-form" method="post" action="//formspree.io/einar@appyard.no">
+            <form id="form" className="Contact-form" method="post" action="//formspree.io/michael@appyard.no">
               <input className="Contact-form-input" name="kontakt-info" id="text" type="text" placeholder="Epost eller telefonnummer" defaultValue="" required />
               <input className="Contact-form-input-alt" name="_subject" value="Jeg vil gjerne bli kontaktet" readOnly />
               <input className="Contact-form-input-alt" name="_next" value="/#takk" readOnly />

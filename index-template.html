@@ -51,40 +51,6 @@
     <% if (htmlWebpackPlugin.options.devMode) { %>
     <script src="http://localhost:3000/static/bundle.js"></script>
     <% } %>
-    <script>
-      function initMap() {
-        var point = {
-          lat: 59.899519,
-          lng: 10.6287
-        };
-
-        var customMapType = new google.maps.StyledMapType([{
-          stylers: [{
-            saturation: -100
-          }]
-        }]);
-        var customMapTypeId = 'appyard';
-
-        var map = new google.maps.Map(document.getElementById('Map'), {
-          center: point,
-          zoom: 12,
-          disableDefaultUI: true,
-          scrollwheel: false,
-          navigationControl: false,
-          mapTypeControl: false,
-          scaleControl: false,
-          draggable: false
-        });
-
-        var marker = new google.maps.Marker({
-          position: point,
-          map: map
-        });
-
-        map.mapTypes.set(customMapTypeId, customMapType);
-        map.setMapTypeId(customMapTypeId);
-      }
-    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIRD9Y93tSbxINqOUQplI4C_-9pQgWs-Y&callback=initMap" async defer></script>
   </body>
 </html>
