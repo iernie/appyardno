@@ -44,9 +44,8 @@ class App extends React.Component {
               <div className="col-md">
                 <img src="static/img/appyard-logo-white.png" alt="Appyard logo" className="Intro-logo" />
                 <div className="Intro-text fadeInUp">
-                  Målrettet styring av informasjon til dine brukere og målgruppe. En egen mobilapplikasjon for din organisasjon.
+                  Målrettet styring av informasjon til dine brukere og målgruppe.<br />En egen mobilapplikasjon for din organisasjon.
                 </div>
-                <a data-scroll id="kontakt" href="#contact" className="Intro-button fadeInDown">Kontakt</a>
                 <a data-scroll id="lesmer" href="#more" className="Intro-button fadeInDown">Les mer</a>
                 <img src="static/img/intro.png" alt="Intro bilde" className="Intro-img fadeInUp" />
               </div>
@@ -59,7 +58,7 @@ class App extends React.Component {
         <div className="Section-content Info" id="more">
           <div className="Section-content-box">
             <div className="row">
-              <div className="col-sm-offset-4 col-sm-8 col-lg-6 col-lg-offset-6 fadeInRight">
+              <div className="col-sm-offset-4 col-sm-8 col-lg-7 col-lg-offset-5 fadeInRight">
                 <h1 className="Info-section-header">
                   <span>Visste du at 88% av mobilbrukere bruker apps?</span>
                 </h1>
