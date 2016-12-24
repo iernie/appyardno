@@ -169,92 +169,6 @@ class App extends React.Component {
       </section>
 
       <section className="Section">
-        <div className="Section-content Beacons">
-          <div className="Section-content-box">
-            <div className="row">
-              <div className="col-md-8 fadeInUp">
-                <h1 className="Beacons-section-header"><span>Proximity Information - Beacons</span></h1>
-                <div className="Beacons-text"><strong>Proximity Information</strong> eller <strong>Informasjon i nærheten</strong> er et konsept som består av Notify applikasjon og beaconteknologi.</div>
-                <div className="Beacons-text">Proximity Information er et konsept som sørger for at man får informasjon tilsendt som en pushmelding på sin mobil avhengig av hvor man befinner seg i et bymiljø eller andre lokasjoner.</div>
-                <div className="Beacons-text">Dersom man for eksempel befinner seg i nærheten av en kino, kan man få tilsendt dagens filmer, pris og kanskje en rabattkupong på popcorn direkte til sin mobiltelefon.<br /><strong>Fiffig, ikke sant?</strong></div>
-                <div className="Beacons-text">Alle applikasjoner fra Appyard blir levert <strong>ferdig integrert</strong> med beacons!</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="Section">
-        <div className="Section-content Process">
-          <div className="Section-content-box">
-            <h1 className="Process-section-header">Prosessen</h1>
-            <div className="row middle-xs reverse">
-              <div className="col-sm-6 Process-item-placeholder fadeInRight">
-                <FontAwesome className="Process-item-icon" name="users" />
-              </div>
-              <div className="col-sm-6 fadeInLeft">
-                <div className="Process-item">
-                  <h2 className="Process-item-header">Dag 1</h2>
-                  <span className="Process-item-text">
-                    Vi gjennomfører en kort workshop med dere hvor vi bestemmer oss for oppsett og bruk av applikasjonen, hvem som skal være redaktør etc.
-                  </span>
-                </div>
-              </div>
-              <div className="col-sm-6 Process-item-placeholder fadeInRight">
-                <FontAwesome className="Process-item-icon" name="file-image-o" />
-              </div>
-              <div className="col-sm-6 fadeInLeft">
-                <div className="Process-item">
-                  <h2 className="Process-item-header">Dag 2</h2>
-                  <span className="Process-item-text">
-                    Dere sender oss deres profilhåndbok og bilder, slik at vi kan skreddersy applikasjonen for dere.
-                  </span>
-                </div>
-              </div>
-              <div className="col-sm-6 Process-item-placeholder fadeInRight">
-                <FontAwesome className="Process-item-icon" name="pencil-square-o" />
-              </div>
-              <div className="col-sm-6 fadeIn">
-                <div className="Process-item">
-                  <h2 className="Process-item-header">Dag 3 &ndash; 5</h2>
-                  <span className="Process-item-text">
-                    Vi lager et forslag til hvordan applikasjonen skal se ut. Vi jobber med dette til dere er fornøyd.
-                  </span>
-                </div>
-              </div>
-              <div className="col-sm-6 Process-item-placeholder fadeInRight">
-                <FontAwesome className="Process-item-icon" name="cogs" />
-              </div>
-              <div className="col-sm-6 fadeIn">
-                <div className="Process-item">
-                  <h2 className="Process-item-header">Dag 6</h2>
-                  <span className="Process-item-text">
-                    Applikasjonen settes i produksjon, hvor den blir sendt til
-                    <strong>Apple</strong>
-                    og
-                    <strong>Google</strong>
-                    for godkjenning.
-                  </span>
-                </div>
-              </div>
-              <div className="col-sm-6 Process-item-placeholder fadeInRight">
-                <FontAwesome className="Process-item-icon" name="download" />
-              </div>
-              <div className="col-sm-6 fadeIn">
-                <div className="Process-item">
-                  <h2 className="Process-item-header">Dag 17</h2>
-                  <span className="Process-item-text">
-                    Appen er klar for nedlasting før dere rekker å si
-                    <strong>epostutsendelsesskrivefeil</strong>.
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="Section">
         <div className="Section-content Customers">
           <div className="Section-content-box">
             <h1 className="Customers-section-header">Kundeomtale</h1>
@@ -321,6 +235,87 @@ class App extends React.Component {
                 <div className="Customers-item">
                   <img className="Customers-item-img" src="static/img/spydeberg.png" />
                   Spydeberg kommune
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="Section">
+        <div className="Section-content Beacons">
+          <div className="Section-content-box">
+            <div className="row">
+              <div className="col-md-8 fadeInUp">
+                <h1 className="Beacons-section-header"><span>Proximity Information - Beacons</span></h1>
+                <div className="Beacons-text"><strong>Proximity Information</strong> eller <strong>Informasjon i nærheten</strong> er et konsept som består av Notify applikasjon og beaconteknologi.</div>
+                <div className="Beacons-text">Proximity Information er et konsept som sørger for at man får informasjon tilsendt som en pushmelding på sin mobil avhengig av hvor man befinner seg i et bymiljø eller andre lokasjoner.</div>
+                <div className="Beacons-text">Dersom man for eksempel befinner seg i nærheten av en kino, kan man få tilsendt dagens filmer, pris og kanskje en rabattkupong på popcorn direkte til sin mobiltelefon.<br /><strong>Fiffig, ikke sant?</strong></div>
+                <div className="Beacons-text">Alle applikasjoner fra Appyard blir levert <strong>ferdig integrert</strong> med beacons!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="Section">
+        <div className="Section-content Process">
+          <div className="Section-content-box">
+            <h1 className="Process-section-header">Prosessen</h1>
+            <div className="row middle-xs reverse">
+              <div className="col-sm-6 Process-item-placeholder fadeInRight">
+                <FontAwesome className="Process-item-icon" name="users" />
+              </div>
+              <div className="col-sm-6 fadeInLeft">
+                <div className="Process-item">
+                  <h2 className="Process-item-header">Dag 1</h2>
+                  <span className="Process-item-text">
+                    Vi gjennomfører en kort workshop med dere hvor vi bestemmer oss for oppsett og bruk av applikasjonen, hvem som skal være redaktør etc.
+                  </span>
+                </div>
+              </div>
+              <div className="col-sm-6 Process-item-placeholder fadeInRight">
+                <FontAwesome className="Process-item-icon" name="file-image-o" />
+              </div>
+              <div className="col-sm-6 fadeInLeft">
+                <div className="Process-item">
+                  <h2 className="Process-item-header">Dag 2</h2>
+                  <span className="Process-item-text">
+                    Dere sender oss deres profilhåndbok og bilder, slik at vi kan skreddersy applikasjonen for dere.
+                  </span>
+                </div>
+              </div>
+              <div className="col-sm-6 Process-item-placeholder fadeInRight">
+                <FontAwesome className="Process-item-icon" name="pencil-square-o" />
+              </div>
+              <div className="col-sm-6 fadeIn">
+                <div className="Process-item">
+                  <h2 className="Process-item-header">Dag 3 &ndash; 5</h2>
+                  <span className="Process-item-text">
+                    Vi lager et forslag til hvordan applikasjonen skal se ut. Vi jobber med dette til dere er fornøyd.
+                  </span>
+                </div>
+              </div>
+              <div className="col-sm-6 Process-item-placeholder fadeInRight">
+                <FontAwesome className="Process-item-icon" name="cogs" />
+              </div>
+              <div className="col-sm-6 fadeIn">
+                <div className="Process-item">
+                  <h2 className="Process-item-header">Dag 6</h2>
+                  <span className="Process-item-text">
+                    Applikasjonen settes i produksjon, hvor den blir sendt til <strong>Apple</strong> og <strong>Google</strong> for godkjenning.
+                  </span>
+                </div>
+              </div>
+              <div className="col-sm-6 Process-item-placeholder fadeInRight">
+                <FontAwesome className="Process-item-icon" name="download" />
+              </div>
+              <div className="col-sm-6 fadeIn">
+                <div className="Process-item">
+                  <h2 className="Process-item-header">Dag 17</h2>
+                  <span className="Process-item-text">
+                    Appen er klar for nedlasting før dere rekker å si <strong>epostutsendelsesskrivefeil</strong>.
+                  </span>
                 </div>
               </div>
             </div>
