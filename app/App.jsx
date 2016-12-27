@@ -4,8 +4,26 @@ import ScrollReveal from 'scrollreveal';
 import SmoothScroll from 'smooth-scroll';
 import classNames from 'classnames';
 import { browserHistory } from 'react-router';
+
+import logo from 'img/appyard-logo-white.png';
+import aas from 'img/aas.png';
+import askim from 'img/askim.png';
+import eidsberg from 'img/eidsberg.png';
+import fjell from 'img/fjell.png';
+import halden from 'img/halden.png';
+import hobol from 'img/hobol.png';
+import lenvik from 'img/lenvik.png';
+import spydeberg from 'img/spydeberg.png';
+import sc1 from 'img/sc1.png';
+import sc2 from 'img/sc2.png';
+import sc3 from 'img/sc3.png';
+import sc4 from 'img/sc4.png';
+import sc5 from 'img/sc5.png';
+import cms from 'img/cms.png';
+
 import Carousel from './components/Carousel';
 import GoogleMaps from './components/GoogleMaps';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -42,7 +60,7 @@ class App extends React.Component {
           <div className="Section-content-box">
             <div className="row">
               <div className="col-md">
-                <img src="static/img/appyard-logo-white.png" alt="Appyard logo" className="Intro-logo" />
+                <img src={logo} alt="Appyard logo" className="Intro-logo" />
                 <div className="Intro-text fadeInUp">
                   Målrettet styring av informasjon til dine brukere og målgruppe.<br />En egen mobilapplikasjon for din organisasjon.
                 </div>
@@ -191,49 +209,49 @@ class App extends React.Component {
             <div className="row">
               <div className="col-sm-3 col-xs-4 fadeInDown">
                 <div className="Customers-item">
-                  <img className="Customers-item-img" src="static/img/aas.png" />
+                  <img className="Customers-item-img" src={aas} />
                   Ås kommune
                 </div>
               </div>
               <div className="col-sm-3 col-xs-4 fadeInDown">
                 <div className="Customers-item">
-                  <img className="Customers-item-img" src="static/img/askim.png" />
+                  <img className="Customers-item-img" src={askim} />
                   Askim kommune
                 </div>
               </div>
               <div className="col-sm-3 col-xs-4 fadeInDown">
                 <div className="Customers-item">
-                  <img className="Customers-item-img" src="static/img/eidsberg.png" />
+                  <img className="Customers-item-img" src={eidsberg} />
                   Eidsberg kommune
                 </div>
               </div>
               <div className="col-sm-3 col-xs-4 fadeInDown">
                 <div className="Customers-item">
-                  <img className="Customers-item-img" src="static/img/fjell.png" />
+                  <img className="Customers-item-img" src={fjell} />
                   Fjell kommune
                 </div>
               </div>
               <div className="col-sm-3 col-xs-4 fadeInDown">
                 <div className="Customers-item">
-                  <img className="Customers-item-img" src="static/img/halden.png" />
+                  <img className="Customers-item-img" src={halden} />
                   Halden kommune
                 </div>
               </div>
               <div className="col-sm-3 col-xs-4 fadeInDown">
                 <div className="Customers-item">
-                  <img className="Customers-item-img" src="static/img/hobol.png" />
+                  <img className="Customers-item-img" src={hobol} />
                   Hobøl kommune
                 </div>
               </div>
               <div className="col-sm-3 col-xs-4 fadeInDown">
                 <div className="Customers-item">
-                  <img className="Customers-item-img" src="static/img/lenvik.png" />
+                  <img className="Customers-item-img" src={lenvik} />
                   Lenvik kommune
                 </div>
               </div>
               <div className="col-sm-3 col-xs-4 fadeInDown">
                 <div className="Customers-item">
-                  <img className="Customers-item-img" src="static/img/spydeberg.png" />
+                  <img className="Customers-item-img" src={spydeberg} />
                   Spydeberg kommune
                 </div>
               </div>
@@ -328,12 +346,12 @@ class App extends React.Component {
           <div className="Section-content-box">
             <h1 className="Images-section-header">Skjermbilder</h1>
             <Carousel className="Image-list fadeInUp">
-              <div className="Images-list-item"><img className="Images-img" src="static/img/sc1.png" /></div>
-              <div className="Images-list-item"><img className="Images-img" src="static/img/sc2.png" /></div>
-              <div className="Images-list-item"><img className="Images-img" src="static/img/sc3.png" /></div>
-              <div className="Images-list-item"><img className="Images-img" src="static/img/sc4.png" /></div>
-              <div className="Images-list-item"><img className="Images-img" src="static/img/sc5.png" /></div>
-              <div className="Images-list-item"><img className="Images-img" src="static/img/cms.png" /></div>
+              <div className="Images-list-item"><img className="Images-img" src={sc1} /></div>
+              <div className="Images-list-item"><img className="Images-img" src={sc2} /></div>
+              <div className="Images-list-item"><img className="Images-img" src={sc3} /></div>
+              <div className="Images-list-item"><img className="Images-img" src={sc4} /></div>
+              <div className="Images-list-item"><img className="Images-img" src={sc5} /></div>
+              <div className="Images-list-item"><img className="Images-img" src={cms} /></div>
             </Carousel>
           </div>
         </div>

@@ -42,22 +42,29 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.jsx?$/,
+				test: /\.jsx?$/i,
 				exclude: /(node_modules)/,
         include: /(app|index.js)/,
 				loaders: ['babel']
 			},
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader?-convertValues&-autoprefixer&sourceMap')
       },
 			{
-        test: /\.less$/,
+        test: /\.less$/i,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader?-convertValues&-autoprefixer&sourceMap!postcss-loader!less-loader?sourceMap')
       },
       {
-        test: /\.(png|jpg|ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9=\.]+)?$/,
+        test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9=\.]+)?$/i,
         loader: 'file-loader'
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file-loader',
+          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
       }
 		  ]
 		},

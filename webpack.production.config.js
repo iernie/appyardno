@@ -40,7 +40,7 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.jsx?$/,
+				test: /\.jsx?$/i,
 				exclude: /(node_modules)/,
 				loader: ['babel-loader'],
 				query: {
@@ -48,16 +48,23 @@ module.exports = {
 				}
 			},
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader?-convertValues&-autoprefixer')
       },
 			{
-        test: /\.less$/,
+        test: /\.less$/i,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader?-convertValues&-autoprefixer!postcss-loader!less-loader')
       },
       {
-        test: /\.(png|jpg|ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9=\.]+)?$/,
+        test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9=\.]+)?$/i,
         loader: 'file-loader'
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file-loader',
+          'image-webpack?optimizationLevel=7&interlaced=false'
+        ]
       }
 			]
 		},
