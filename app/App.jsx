@@ -24,21 +24,14 @@ import cms from 'img/cms.png';
 import Carousel from './components/Carousel';
 import GoogleMaps from './components/GoogleMaps';
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showNotification: props.location.hash === '#takk'
+      showNotification: false
     };
-    if (props.location.hash === '#takk') {
-      setTimeout(() => {
-        this.setState({
-          showNotification: false
-        });
-        browserHistory.replace('/');
-      }, 5000);
-    }
+    this.handleLocation = this.handleLocation.bind(this);
+    this.handleLocation(props);
   }
   componentDidMount() {
     const sr = ScrollReveal({ delay: 250 });
@@ -48,6 +41,25 @@ class App extends React.Component {
     sr.reveal('.fadeInLeft', { origin: 'right' });
     sr.reveal('.fadeIn');
     SmoothScroll.init({ updateURL: false });
+  }
+  componentWillReceiveProps(nextProps) {
+    this.handleLocation(nextProps);
+  }
+  handleLocation(props) {
+    if (props.location.hash === '#takk') {
+      this.setState({
+        showNotification: true
+      });
+      setTimeout(() => {
+        this.setState({
+          showNotification: false
+        });
+      }, 5000);
+      browserHistory.replace('/');
+    }
+    if (props.location.hash === '#lesmer') {
+      browserHistory.replace('/');
+    }
   }
   render() {
     const notificationClass = classNames({
@@ -64,7 +76,7 @@ class App extends React.Component {
                 <div className="Intro-text fadeInUp">
                   Målrettet styring av informasjon til dine brukere og målgruppe.<br />En egen mobilapplikasjon for din organisasjon.
                 </div>
-                <a data-scroll id="lesmer" href="#more" className="Intro-button fadeInDown">Les mer</a>
+                <a data-scroll id="more" href="#lesmer" className="Intro-button fadeInDown">Les mer</a>
               </div>
             </div>
           </div>
@@ -72,7 +84,7 @@ class App extends React.Component {
       </section>
 
       <section className="Section">
-        <div className="Section-content Info" id="more">
+        <div className="Section-content Info" id="lesmer">
           <div className="Section-content-box">
             <div className="row">
               <div className="col-sm-offset-4 col-sm-8 col-lg-7 col-lg-offset-5 fadeInRight">
