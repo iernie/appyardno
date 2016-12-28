@@ -56,7 +56,7 @@ module.exports = {
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader?-convertValues&-autoprefixer&sourceMap!postcss-loader!less-loader?sourceMap')
       },
       {
-        test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9=\.]+)?$/i,
+        test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[#a-z0-9=\.]+)?$/i,
         loader: 'file-loader'
       },
       {
