@@ -12,6 +12,7 @@ import eidsberg from 'img/eidsberg.png';
 import fjell from 'img/fjell.png';
 import halden from 'img/halden.png';
 import hobol from 'img/hobol.png';
+import kongsberg from 'img/kongsberg.png';
 import lenvik from 'img/lenvik.png';
 import spydeberg from 'img/spydeberg.png';
 import sc1 from 'img/sc1.png';
@@ -253,6 +254,12 @@ class App extends React.Component {
                 <div className="Customers-item">
                   <img className="Customers-item-img" src={hobol} />
                   Hobøl kommune
+                </div>
+              </div>
+              <div className="col-sm-3 col-xs-4 fadeInDown">
+                <div className="Customers-item">
+                  <img className="Customers-item-img" src={kongsberg} />
+                  Kongsberg kommune
                 </div>
               </div>
               <div className="col-sm-3 col-xs-4 fadeInDown">
