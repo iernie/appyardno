@@ -222,12 +222,6 @@ class App extends React.Component {
             <div className="row">
               <div className="col-sm-3 col-xs-4 fadeInDown">
                 <div className="Customers-item">
-                  <img className="Customers-item-img" src={aas} />
-                  Ås kommune
-                </div>
-              </div>
-              <div className="col-sm-3 col-xs-4 fadeInDown">
-                <div className="Customers-item">
                   <img className="Customers-item-img" src={askim} />
                   Askim kommune
                 </div>
@@ -272,6 +266,12 @@ class App extends React.Component {
                 <div className="Customers-item">
                   <img className="Customers-item-img" src={spydeberg} />
                   Spydeberg kommune
+                </div>
+              </div>
+              <div className="col-sm-3 col-xs-4 fadeInDown">
+                <div className="Customers-item">
+                  <img className="Customers-item-img" src={aas} />
+                  Ås kommune
                 </div>
               </div>
             </div>
