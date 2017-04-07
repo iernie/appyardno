@@ -5,14 +5,14 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
-	debug: true,
 	devtool: 'eval',
 	resolve: {
-	    root: [
+	    modules: [
         path.join(__dirname, 'app'),
-				path.join(__dirname, 'static')
+				path.join(__dirname, 'static'),
+        'node_modules'
       ],
-	    extensions: ['', '.js', '.jsx', '.less']
+	    extensions: ['.js', '.jsx', '.less']
   	},
 	entry: [
 		'webpack-dev-server/client?http://localhost:3000',
@@ -30,6 +30,9 @@ module.exports = {
     new webpack.DefinePlugin({
       __DEV__: 'true'
     }),
+    new webpack.LoaderOptionsPlugin({
+      debug: true
+    }),
     new HtmlWebpackPlugin({
       template: 'index-template.html',
       filename: '../index.html',
@@ -37,38 +40,91 @@ module.exports = {
       devMode: true,
       inject: false
     }),
-    new ExtractTextPlugin('bundle.css', { allChunks: false })
+    new ExtractTextPlugin({
+      filename: 'bundle.css',
+      allChunks: false
+    })
 	],
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.jsx?$/i,
 				exclude: /(node_modules)/,
         include: /(app|index.js)/,
-				loaders: ['babel']
+				use: [{
+          loader: 'babel-loader'
+        }]
 			},
       {
         test: /\.css$/i,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?-convertValues&-autoprefixer&sourceMap')
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [{
+            loader: 'css-loader',
+            options: {
+              convertValues: false,
+              autoprefixer: false,
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => {
+                return [autoprefixer({ browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'IE 11'] })];
+              }
+            }
+          }]
+        })
       },
 			{
         test: /\.less$/i,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?-convertValues&-autoprefixer&sourceMap!postcss-loader!less-loader?sourceMap')
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [{
+            loader: 'css-loader',
+            options: {
+              convertValues: false,
+              autoprefixer: false,
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => {
+                return [autoprefixer({ browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'IE 11'] })];
+              }
+            }
+          },
+          {
+            loader: 'less-loader',
+            options: {
+              sourceMap: true
+            }
+          }]
+        })
       },
       {
         test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[#a-z0-9=\.]+)?$/i,
-        loader: 'file-loader'
+        use: [{
+          loader: 'file-loader'
+        }]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: [
-          'file-loader',
-          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        use: [
+          {
+            loader: 'file-loader'
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true
+            }
+          }
         ]
       }
 		  ]
-		},
-		postcss() {
-      return [autoprefixer({ remove: false, browsers: ['> 1%', 'Firefox ESR', 'ie >= 9', 'last 2 versions', 'Safari >= 7'] })];
-    }
+		}
 };

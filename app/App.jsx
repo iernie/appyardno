@@ -15,6 +15,7 @@ import hobol from 'img/hobol.png';
 import kongsberg from 'img/kongsberg.png';
 import lenvik from 'img/lenvik.png';
 import spydeberg from 'img/spydeberg.png';
+import technopolis from 'img/technopolis.png';
 import sc1 from 'img/sc1.png';
 import sc2 from 'img/sc2.png';
 import sc3 from 'img/sc3.png';
@@ -272,6 +273,12 @@ class App extends React.Component {
                 <div className="Customers-item">
                   <img className="Customers-item-img" src={aas} />
                   Ås kommune
+                </div>
+              </div>
+              <div className="col-sm-3 col-xs-4 fadeInDown">
+                <div className="Customers-item">
+                  <img className="Customers-item-img" src={technopolis} />
+                  Technopolis
                 </div>
               </div>
             </div>
